@@ -1,5 +1,6 @@
 //A到Z循环的螺旋矩阵
-//浪费时间：for 循环结束后i,j多加了一次。解决方法：i,j直接初始化
+//浪费时间：for 循环结束后i,j多加了一次。
+//解决方法：i,j直接初始化。
 
 #include <stdio.h>
 #include <stdlib.h>
