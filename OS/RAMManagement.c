@@ -1,4 +1,5 @@
 //内存管理模拟程序
+//释放空间时没有考虑地址，来日再议
 
 #include <stdio.h>
 #include <stdlib.h>
