@@ -1,0 +1,17 @@
+#！/bin/bash
+
+for i in $(seq 1 3)
+do
+    addgroup class${i}
+	for j in $(seq 1 30)
+	do    
+    	if [ $j -le 9 ]
+        then
+        USERNAME=class${i}stu0${j}
+        else
+        USERNAME=class${i}stu${j}
+        fi
+        useradd -g class${i}  $USERNAME
+    done
+	
+done
