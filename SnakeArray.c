@@ -30,7 +30,7 @@ void snakeArray(char a[][LENGTH]){
     int j = 0;
     int m = LENGTH;
     char n = 'A';
-    bool label = false;
+    int label = 0;
     while(1){
         for(j = LENGTH - m,i = LENGTH - m;j < m ;j++){
             a[i][j] = n;
