@@ -42,7 +42,6 @@
                 continue;  
             }  
               
-        //  pthread_mutex_lock(&chopstick[right]); //拿起右手的筷子，如果想观察死锁，把上一句if注释掉，再把这一句的注释去掉  
             printf("Philosopher %c fetches chopstick %d\n", phi, right);  
             printf("Philosopher %c is eating.\n",phi);  
             usleep(3); //吃饭  
@@ -54,6 +53,7 @@
             pthread_mutex_destroy(&chopstick[right]);  
         }  
     }  
+    
     int main(){  
         pthread_t A,B,C,D,E; //5个哲学家  
       

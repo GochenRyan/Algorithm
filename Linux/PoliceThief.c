@@ -20,6 +20,7 @@ typedef struct coordinate
 } coordinate;
 coordinate police_c = {0,5};
 coordinate thief_c = {0,6};
+
 void show(){
     int i,j;
     initscr();
@@ -34,6 +35,7 @@ void show(){
     for(i=0;i<10000;i++)
         for(j=0;j<10000;j++){}
     }
+
 void chase(void *arg)
 {
     char phi = *(char *)arg;
@@ -45,7 +47,7 @@ void chase(void *arg)
         if(phi == 'P')
         {
 
-            while(police_c.x >= maxDistance || abs(police_c.x - thief_c.x) > ；distance)
+            while(police_c.x >= maxDistance || abs(police_c.x - thief_c.x) > distance)
             {
               pthread_cond_wait(&xiao,&run);
 
