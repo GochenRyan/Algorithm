@@ -137,6 +137,7 @@ void BinaryTree::postOrder()
             }
         }
     }
+    std::cout << std::endl;
 }
 
 int main()
