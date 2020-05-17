@@ -42,7 +42,7 @@ public:
     int getMax();
 };
 
-//����
+// 输入
 void List::input(){
     LinkNode *newNode;
     LinkNode *p=first;
@@ -65,7 +65,7 @@ void List::input(){
     }
 }
 
-//���
+// 输出
 void List::output(){
     LinkNode *p=first->link;
     cout<<"C(x)=";
@@ -101,7 +101,7 @@ void List::output(){
 
 }
 
-//���ء�+��
+// 重载“+”
 List operator+(List &A,List &B){
     List C;
     C.maxSize=0;
@@ -152,7 +152,7 @@ List operator+(List &A,List &B){
     return C;
 }
 
-//���ء�-�� 
+// 重载“-”
 List operator-(List &A,List &B){
     List C;
     LinkNode *pa,*pb,*pc;
@@ -206,7 +206,7 @@ List operator-(List &A,List &B){
     return C;
 }
 
-//����"*"
+// 重载"*"
 List operator*(List &A,List &B){
     List C;
     int m,temp;
@@ -237,7 +237,7 @@ List operator*(List &A,List &B){
     return C;
 }
 
-//��
+// 求导
 List List::derivation(){
     List C;
     LinkNode *pc=C.first;
@@ -254,7 +254,7 @@ List List::derivation(){
     return C;
 }
 
-//��������
+// 代数计算
 float List::calculate(float x){
     LinkNode *p=first->link;
     float result=0;
@@ -266,7 +266,7 @@ float List::calculate(float x){
 
 }
 
-//���ָ��
+// 最大指数
 int List::getMax(){
     LinkNode *p=first->link;
     while(p!=NULL){
