@@ -42,7 +42,7 @@ public:
     int getMax();
 };
 
-//ÊäÈë
+//ï¿½ï¿½ï¿½ï¿½
 void List::input(){
     LinkNode *newNode;
     LinkNode *p=first;
@@ -65,7 +65,7 @@ void List::input(){
     }
 }
 
-//Êä³ö
+//ï¿½ï¿½ï¿½
 void List::output(){
     LinkNode *p=first->link;
     cout<<"C(x)=";
@@ -101,7 +101,7 @@ void List::output(){
 
 }
 
-//ÖØÔØ¡°+¡±
+//ï¿½ï¿½ï¿½Ø¡ï¿½+ï¿½ï¿½
 List operator+(List &A,List &B){
     List C;
     C.maxSize=0;
@@ -152,7 +152,7 @@ List operator+(List &A,List &B){
     return C;
 }
 
-//ÖØÔØ¡°-¡±
+//ï¿½ï¿½ï¿½Ø¡ï¿½-ï¿½ï¿½ 
 List operator-(List &A,List &B){
     List C;
     LinkNode *pa,*pb,*pc;
@@ -206,7 +206,7 @@ List operator-(List &A,List &B){
     return C;
 }
 
-//ÖØÔØ"*"
+//ï¿½ï¿½ï¿½ï¿½"*"
 List operator*(List &A,List &B){
     List C;
     int m,temp;
@@ -237,7 +237,7 @@ List operator*(List &A,List &B){
     return C;
 }
 
-//Çóµ¼
+//ï¿½ï¿½
 List List::derivation(){
     List C;
     LinkNode *pc=C.first;
@@ -254,7 +254,7 @@ List List::derivation(){
     return C;
 }
 
-//´úÊý¼ÆËã
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 float List::calculate(float x){
     LinkNode *p=first->link;
     float result=0;
@@ -266,7 +266,7 @@ float List::calculate(float x){
 
 }
 
-//×î´óÖ¸Êý
+//ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 int List::getMax(){
     LinkNode *p=first->link;
     while(p!=NULL){
